@@ -43,8 +43,6 @@ function Learn({ resources, group }: LearnProps) {
   const resourcesToRender = shouldFilter ? resources.filter((resource) => resource.type === query.type) : resources;
   const filters = buildFilters(group);
 
-  console.log('resourcesToRender', resourcesToRender);
-
   return (
     <div className="text-center min-h-screen py-10 resource">
       <div className="max-w-4xl mx-auto pb-12">

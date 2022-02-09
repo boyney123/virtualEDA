@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const colors = require('tailwindcss/colors');
 
 module.exports = {
@@ -24,6 +25,7 @@ module.exports = {
     extend: {},
   },
   purge: {
+    content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
     safelist: [
       'to-resource-video-dark',
       'to-resource-article-dark',

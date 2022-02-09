@@ -5,7 +5,6 @@ import { VideoCameraIcon, DocumentIcon, CodeIcon, AcademicCapIcon } from '@heroi
 import type { Resource } from '@/types/index';
 
 const getIconForType = (type, props) => {
-  console.log(type, props);
   switch (type) {
     case 'video':
       return <VideoCameraIcon className={`h-4 w-4 text-resource-video-base mr-2 ${props.className}`} />;

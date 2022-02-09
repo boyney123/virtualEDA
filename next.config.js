@@ -5,6 +5,6 @@ module.exports = {
   },
   publicRuntimeConfig: {
     MEETUP_URL: 'http://www.meetup.com/virtual-event-driven',
-    DISCORD_INVITE_URL: 'test'
-  }
+    DISCORD_INVITE_URL: 'test',
+  },
 };

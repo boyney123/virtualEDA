@@ -1,12 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+
 const navigation = [
   { name: 'Learn', href: '/learn/general' },
   { name: 'Sessions', href: '/sessions' },
   { name: 'Join Discord', href: '#' },
 ];
 
-const Header = () => {
+function Header() {
   return (
     <nav className="max-w-7xl mx-auto flex items-center justify-between py-8" aria-label="Global">
       <div className="flex items-center flex-1">
@@ -29,6 +30,6 @@ const Header = () => {
       </div>
     </nav>
   );
-};
+}
 
 export default Header;

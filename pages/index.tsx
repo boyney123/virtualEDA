@@ -1,5 +1,3 @@
-import Team from '@/components/Team';
-import About from '@/components/About';
 import getConfig from 'next/config';
 
 import { ExternalLinkIcon, ChevronRightIcon } from '@heroicons/react/solid';
@@ -9,28 +7,32 @@ const people = [
   {
     name: 'Lindsay Walton',
     role: 'Front-end Developer',
-    imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Lindsay Walton',
     role: 'Front-end Developer',
-    imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Lindsay Walton',
     role: 'Front-end Developer',
-    imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Lindsay Walton',
     role: 'Front-end Developer',
-    imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -56,7 +58,14 @@ export default function Example() {
               fill="none"
             >
               <defs>
-                <pattern id="eab71dd9-9d7a-47bd-8044-256344ee00d0" x={0} y={0} width={20} height={20} patternUnits="userSpaceOnUse">
+                <pattern
+                  id="eab71dd9-9d7a-47bd-8044-256344ee00d0"
+                  x={0}
+                  y={0}
+                  width={20}
+                  height={20}
+                  patternUnits="userSpaceOnUse"
+                >
                   <rect x={0} y={0} width={4} height={4} fill="currentColor" />
                 </pattern>
               </defs>
@@ -69,14 +78,21 @@ export default function Example() {
                 <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                   <div className="px-4 sm:px-6 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
                     <div>
-                      <a href="#" className="inline-flex items-center text-white bg-gray-900 rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
-                        <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-red-500 rounded-full">New Meetup Group</span>
+                      <a
+                        href="#"
+                        className="inline-flex items-center text-white bg-gray-900 rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
+                      >
+                        <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-red-500 rounded-full">
+                          New Meetup Group
+                        </span>
                         <span className="ml-4 text-sm">Join our Virtual Meetup Group</span>
                         <ChevronRightIcon className="ml-2 w-5 h-5 text-gray-500" aria-hidden="true" />
                       </a>
                       <h1 className="mt-4 text-3xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-5xl">
                         <span className="md:block text-3xl">Virtual - Event Driven Community</span>{' '}
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">Learn, Share and Meet</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">
+                          Learn, Share and Meet
+                        </span>
                       </h1>
                       <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                         A community driven site for people who want to learn more about Event-Driven Architectures.
@@ -85,13 +101,25 @@ export default function Example() {
                       <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
                         <div className="flex flex-wrap items-start justify-between">
                           <div className="flex justify-center px-1">
-                            <img className="h-9 sm:h-10" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
+                            <img
+                              className="h-9 sm:h-10"
+                              src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
+                              alt="Tuple"
+                            />
                           </div>
                           <div className="flex justify-center px-1">
-                            <img className="h-9 sm:h-10" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation" />
+                            <img
+                              className="h-9 sm:h-10"
+                              src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
+                              alt="Workcation"
+                            />
                           </div>
                           <div className="flex justify-center px-1">
-                            <img className="h-9 sm:h-10" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit" />
+                            <img
+                              className="h-9 sm:h-10"
+                              src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
+                              alt="StaticKit"
+                            />
                           </div>
                         </div>
                       </div>
@@ -102,10 +130,13 @@ export default function Example() {
                       <div className="bg-gray-800 text-white rounded-xl  p-4">
                         <h1 className="text-lg">Welcome,</h1>
                         <p className="text-gray-300 mt-2">
-                          Virtual Event Driven Community is a site for people who want to get more in-depth knowledge of Event-Driven Architectures. The website is driven by the community and we
-                          welcome contributions and learning material.
+                          Virtual Event Driven Community is a site for people who want to get more in-depth knowledge of
+                          Event-Driven Architectures. The website is driven by the community and we welcome contributions and
+                          learning material.
                         </p>
-                        <p className="text-gray-100 mt-4 fon">Everybody is welcome to join us, we love learning and growing together.</p>
+                        <p className="text-gray-100 mt-4 fon">
+                          Everybody is welcome to join us, we love learning and growing together.
+                        </p>
                         <div className="mt-5 max-w-md mx-auto  sm:justify-center md:mt-8">
                           <div className="rounded-md shadow">
                             <Link href="/learn/general">
@@ -138,25 +169,64 @@ export default function Example() {
         <div className="relative py-16 bg-white overflow-hidden">
           <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
             <div className="relative h-full text-lg max-w-prose mx-auto" aria-hidden="true">
-              <svg className="absolute top-12 left-full transform translate-x-32" width={404} height={384} fill="none" viewBox="0 0 404 384">
+              <svg
+                className="absolute top-12 left-full transform translate-x-32"
+                width={404}
+                height={384}
+                fill="none"
+                viewBox="0 0 404 384"
+              >
                 <defs>
-                  <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x={0} y={0} width={20} height={20} patternUnits="userSpaceOnUse">
+                  <pattern
+                    id="74b3fd99-0a6f-4271-bef2-e80eeafdf357"
+                    x={0}
+                    y={0}
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
+                  >
                     <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
                   </pattern>
                 </defs>
                 <rect width={404} height={384} fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
               </svg>
-              <svg className="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32" width={404} height={384} fill="none" viewBox="0 0 404 384">
+              <svg
+                className="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32"
+                width={404}
+                height={384}
+                fill="none"
+                viewBox="0 0 404 384"
+              >
                 <defs>
-                  <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x={0} y={0} width={20} height={20} patternUnits="userSpaceOnUse">
+                  <pattern
+                    id="f210dbf6-a58d-4871-961e-36d5016a0f49"
+                    x={0}
+                    y={0}
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
+                  >
                     <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
                   </pattern>
                 </defs>
                 <rect width={404} height={384} fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
               </svg>
-              <svg className="absolute bottom-12 left-full transform translate-x-32" width={404} height={384} fill="none" viewBox="0 0 404 384">
+              <svg
+                className="absolute bottom-12 left-full transform translate-x-32"
+                width={404}
+                height={384}
+                fill="none"
+                viewBox="0 0 404 384"
+              >
                 <defs>
-                  <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x={0} y={0} width={20} height={20} patternUnits="userSpaceOnUse">
+                  <pattern
+                    id="d3eb07ae-5182-43e6-857d-35c643af9034"
+                    x={0}
+                    y={0}
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
+                  >
                     <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
                   </pattern>
                 </defs>
@@ -168,27 +238,38 @@ export default function Example() {
             <div className="text-lg max-w-prose mx-auto">
               <h1>
                 <span className="block text-base text-center text-pink-600 font-semibold tracking-wide uppercase">Welcome</span>
-                <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Event Architectures for Everyone</span>
+                <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                  Event Architectures for Everyone
+                </span>
               </h1>
               <p className="mt-8 text-xl text-gray-500 leading-8">Virutal Event-Driven Community</p>
             </div>
             <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto pb-10">
               <p>
-                Virtual Event-Driven is an open community of people that want to learn, share and talk around Event Driven Architectures. Event Architectures are becoming more and more popular and we
-                want to give everybody a place they can learn and share their experiences with each other.
+                Virtual Event-Driven is an open community of people that want to learn, share and talk around Event Driven
+                Architectures. Event Architectures are becoming more and more popular and we want to give everybody a place they
+                can learn and share their experiences with each other.
               </p>
               <h2>Learning & Sharing</h2>
-              <p>You can explore this website to find learning material that has been recommended, to help you gain a deeper understanding of Event Architectures.</p>
-              <p>All the learning material you find on this website is open source and driven by markdown files. We welcome contributions you may wish to add to the website.</p>
+              <p>
+                You can explore this website to find learning material that has been recommended, to help you gain a deeper
+                understanding of Event Architectures.
+              </p>
+              <p>
+                All the learning material you find on this website is open source and driven by markdown files. We welcome
+                contributions you may wish to add to the website.
+              </p>
               <h2>Remote Meetups</h2>
               <p>
-                We arrange remote meetup sessions where people can come talk and listen to each other's experiences with Event Architectures and encourage people to share ideas and learn. Sign up to
-                our Meetup Group to make sure you get the announcements and register to our sessions.
+                We arrange remote meetup sessions where people can come talk and listen to each other&aposs experiences with Event
+                Architectures and encourage people to share ideas and learn. Sign up to our Meetup Group to make sure you get the
+                announcements and register to our sessions.
               </p>
               <h2>The Future</h2>
               <p>
-                Virtual Event-Driven is a new idea, and we want to see if we can grow a community of people that are willing to learn and share ideas with each other. If you would like to help, speak,
-                contribute or sponsor please get in contact!
+                Virtual Event-Driven is a new idea, and we want to see if we can grow a community of people that are willing to
+                learn and share ideas with each other. If you would like to help, speak, contribute or sponsor please get in
+                contact!
               </p>
               <p>We are looking forward to seeing what we can create, let’s make something awesome</p>
             </div>
@@ -206,10 +287,16 @@ export default function Example() {
             <div className="md:ml-auto md:w-1/2 md:pl-10">
               <h2 className="text-base font-semibold uppercase tracking-wider text-gray-300">Learn together</h2>
               <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">Community</p>
-              <p className="mt-3 text-lg text-gray-300">Join the Virtual Event-Driven Community to connect, learn and share your experince with event-driven architectures.</p>
+              <p className="mt-3 text-lg text-gray-300">
+                Join the Virtual Event-Driven Community to connect, learn and share your experince with event-driven
+                architectures.
+              </p>
               <div className="mt-8">
                 <div className="inline-flex rounded-md shadow space-x-2">
-                  <a href="#" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+                  <a
+                    href="#"
+                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+                  >
                     Join Discord
                     <ExternalLinkIcon className="-mr-1 ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
                   </a>
@@ -225,7 +312,7 @@ export default function Example() {
                 <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Organisers</h2>
                 <p className="text-xl text-gray-500">Volunteers that run help and run virtual event-driven.</p>
               </div>
-              <ul role="list" className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
+              <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
                 {people.map((person) => (
                   <li key={person.name}>
                     <div className="space-y-4">
@@ -238,7 +325,7 @@ export default function Example() {
                           <h3>{person.name}</h3>
                           <p className="text-indigo-600">{person.role}</p>
                         </div>
-                        <ul role="list" className="flex space-x-5">
+                        <ul className="flex space-x-5">
                           <li>
                             <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-500">
                               <span className="sr-only">Twitter</span>

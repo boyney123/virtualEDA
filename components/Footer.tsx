@@ -1,4 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
 const navigation = {
   social: [
     {
@@ -15,7 +14,7 @@ const navigation = {
       ),
     },
   ],
-}
+};
 
 export default function Example() {
   return (
@@ -32,5 +31,5 @@ export default function Example() {
         <p className="mt-8 text-center text-base text-gray-400">Built with ♥️ by people passionate about learning.</p>
       </div>
     </footer>
-  )
+  );
 }

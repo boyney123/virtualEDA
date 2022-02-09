@@ -17,9 +17,8 @@ export const getAllResourceGroups = () => {
   return fs.readdirSync(path.join(serverRuntimeConfig.PROJECT_ROOT, './resources'));
 };
 
-const orderResourcesByName = (resources) => {
-  return resources.sort((a, b) => (a.title > b.title ? 1 : b.title > a.title ? -1 : 0));
-};
+// eslint-disable-next-line no-nested-ternary
+const orderResourcesByName = (resources) => resources.sort((a, b) => (a.title > b.title ? 1 : b.title > a.title ? -1 : 0));
 
 export const getAllResourcesByGroup = (group: string) => {
   const { serverRuntimeConfig } = getConfig();

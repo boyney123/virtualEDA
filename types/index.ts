@@ -9,6 +9,6 @@ export interface Resource {
   type: 'video' | 'article';
   url: string;
   thumbnail?: Image;
-  tags?: string[]
+  tags?: string[];
   difficulty?: 'beginner' | 'intermediate' | 'advanced';
 }

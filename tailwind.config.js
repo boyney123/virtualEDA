@@ -33,7 +33,6 @@ module.exports = {
       'from-resource-article-dark',
       'from-resource-code-dark',
 
-
       'to-red-400',
       'to-blue-400',
       'to-yellow-400',

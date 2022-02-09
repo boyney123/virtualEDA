@@ -1,14 +1,18 @@
 import React from 'react';
 import getConfig from 'next/config';
 
-const Sessions = () => {
+function Sessions() {
   const { publicRuntimeConfig } = getConfig();
 
   return (
     <div className="text-center min-h-screen py-10 resource">
       <div className="max-w-4xl mx-auto pb-12">
-        <h1 className=" font-bold text-6xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">Sessions Event Driven Architecture</h1>
-        <span className="text-gray-400 block py-4 pb-0">Community list of Videos, Articles and Code to help you learn Event Driven Architectures.</span>
+        <h1 className=" font-bold text-6xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">
+          Sessions Event Driven Architecture
+        </h1>
+        <span className="text-gray-400 block py-4 pb-0">
+          Community list of Videos, Articles and Code to help you learn Event Driven Architectures.
+        </span>
         <span className="text-gray-600 block py-4 text-sm">
           Want to add something to the list? Feel free to{' '}
           <a className="underline" href="https://github.com/boyney123/virtual-eda">
@@ -30,6 +34,6 @@ const Sessions = () => {
       </main>
     </div>
   );
-};
+}
 
 export default Sessions;

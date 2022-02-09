@@ -1,5 +1,5 @@
 ---
-title: 'Creating event-driven microservices: the why, how and what '
+title: 'Creating event-driven microservices: the why, how and what • Andrew Schofield • Devoxx 2019'
 description: |
       Andrew Schofield talks us through a high level view of Event Architectures and has some great reasons why we might consider them.
 difficulty: 'beginner'

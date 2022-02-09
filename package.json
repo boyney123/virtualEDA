@@ -7,7 +7,9 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx,json}\"",
-    "lint:js": "eslint --cache \"**/*.{js,jsx,ts,tsx}\""
+    "format:diff": "prettier --config .prettierrc --list-different \"**/*.{js,jsx,ts,tsx,json}\"",
+    "lint:js": "eslint --cache \"**/*.{js,jsx,ts,tsx}\"",
+    "lint:ci": "yarn lint:js --quiet --report-unused-disable-directives"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",

@@ -44,16 +44,16 @@ function Learn({ resources, group }: LearnProps) {
   const filters = buildFilters(group);
 
   return (
-    <div className="text-center min-h-screen py-10 resource">
-      <div className="max-w-4xl mx-auto pb-12">
+    <div className="text-center min-h-screen py-4 sm:py-10 resource">
+      <div className="max-w-4xl mx-auto pb-12 px-4">
         {/* <h1 className=" font-bold text-6xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">What would you like to learn?</h1> */}
-        <h1 className=" font-bold text-6xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">
+        <h1 className=" font-bold text-4xl sm:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">
           Learn Event Driven Architecture
         </h1>
         <span className="text-gray-400 block py-4 pb-0">
           Community list of Videos, Articles and Code to help you learn Event Driven Architectures.
         </span>
-        <span className="text-gray-600 block py-4 text-sm">
+        <span className="text-gray-600 block py-4 text-sm px-8 sm:px-0">
           Want to add something to the list? Feel free to{' '}
           <a className="underline" href="https://github.com/boyney123/virtual-eda">
             contribute to the website
@@ -73,7 +73,7 @@ function Learn({ resources, group }: LearnProps) {
           ))}
         </div>
 
-        <div className="py-10 max-w-5xl mx-auto grid grid-cols-2 gap-4">
+        <div className="py-10 max-w-5xl mx-auto px-8 space-y-8 sm:space-y-0 sm:px-8 sm:grid grid-cols-2 gap-4">
           {resourcesToRender.map((resource: Resource, index) => (
             <LearningMaterialItem key={index} resource={resource} />
           ))}

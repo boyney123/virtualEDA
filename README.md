@@ -4,7 +4,7 @@ Virtual Event Driven Community is a site for people who want to get more in-dept
 
 Everybody is welcome to join us, we love learning and growing together.
 
-[Visit Website](https://virtualddd.com/)
+[Visit Website](https://virtual-event-driven.vercel.app)
 
 ## How to add Resources
 

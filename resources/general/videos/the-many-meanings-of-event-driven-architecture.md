@@ -1,9 +1,9 @@
 ---
-title: 'What is Event Driven Architecture? • Whitney Lee'
+title: 'The Many Meanings of Event-Driven Architecture • Martin Fowler • GOTO 2017'
 description: |
-      In this lightboard video, Whitney Lee from IBM Cloud, visually breaks down the answers to these questions and many more, as well as explains the several advantages and opportunities that an event driven architecture provides for developers and organizations in comparison to a request/response application architecture.
+      In this talk, Martin Fowler presents a summary of the most common patterns of EDA: Event Notification, Event-carried State Transfer, Event Sourcing, and CQRS.
 difficulty: 'beginner'
 type: 'video'
-url: https://www.youtube.com/watch?v=o2HJCGcYwoU&t=2s
+url: 'https://youtu.be/STKCRSUsyP0'
 tags: ['presentation']
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'Creating event-driven microservices: the why, how and what '
+title: 'Moving to event-driven architectures • Tim Bray • AWS re:Invent 2019'
 description: |
       Tim Bray from AWS gives an amazing talk about moving to event-driven architectures.
 difficulty: 'beginner'

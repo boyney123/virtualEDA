@@ -1,9 +1,9 @@
 ---
-title: 'The Many Meanings of Event-Driven Architecture • Martin Fowler • GOTO 2017'
+title: 'What is Event Driven Architecture? • Whitney Lee'
 description: |
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae iaculis nisl. Phasellus quis auctor lorem. Suspendisse potenti. Nunc semper dapibus molestie. Donec ultrices consectetur'
+      In this lightboard video, Whitney Lee from IBM Cloud, visually breaks down the answers to these questions and many more, as well as explains the several advantages and opportunities that an event driven architecture provides for developers and organizations in comparison to a request/response application architecture.
 difficulty: 'beginner'
 type: 'video'
-url: 'https://youtu.be/STKCRSUsyP0'
+url: https://www.youtube.com/watch?v=o2HJCGcYwoU&t=2s
 tags: ['presentation']
 ---

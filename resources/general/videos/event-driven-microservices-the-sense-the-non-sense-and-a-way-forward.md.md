@@ -1,5 +1,5 @@
 ---
-title: 'Creating event-driven microservices: the why, how and what '
+title: 'Event-Driven Microservices, the Sense, the Non-sense and a Way Forward • Allard Buijze • GOTO 2019'
 description: |
       Allard Buijze gives us a great talk at GOTO and talks us through various event-driven patterns. 
 difficulty: 'beginner'

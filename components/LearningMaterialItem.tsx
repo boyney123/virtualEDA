@@ -26,12 +26,13 @@ function LearningMaterialItem({ resource }: LearningMaterialItemProps) {
   const TypeIcon = (props) => getIconForType(type, props);
   const upperCaseValue = (value: string) => `${value.substring(0, 1).toUpperCase()}${value.substring(1, value.length)}`;
 
+
   const videoID = getYouTubeID(url);
   const thumbnailURL = `https://img.youtube.com/vi/${videoID}/hqdefault.jpg`;
 
   return (
     <a
-      href={`${url}?ref=virtualeda`}
+      href={`${url}?ref=virtualeda.io`}
       target="_blank"
       className={`block bg-gradient-to-br from-gray-500 to-resource-${type}-dark p-1 rounded hover:from-gray-100`}
       rel="noreferrer"
@@ -42,7 +43,7 @@ function LearningMaterialItem({ resource }: LearningMaterialItemProps) {
           {videoID && thumbnailURL && <img alt="thumbnail" src={thumbnailURL} className="w-full h-64 object-contain " />}
           {!thumbnail && !videoID && (
             <div className="mx-auto w-full py-14">
-              <TypeIcon className="w-full h-32 mx-auto opacity-10 " />
+              <TypeIcon className="w-full h-32 mx-auto opacity-20 empty-icon" />
             </div>
           )}
         </div>

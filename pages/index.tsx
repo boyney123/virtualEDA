@@ -3,46 +3,46 @@ import getConfig from 'next/config';
 import { ExternalLinkIcon, ChevronRightIcon } from '@heroicons/react/solid';
 import Link from 'next/link';
 
-const people = [
-  {
-    name: 'Lindsay Walton',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Lindsay Walton',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Lindsay Walton',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Lindsay Walton',
-    role: 'Front-end Developer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  // More people...
-];
+// const people = [
+//   {
+//     name: 'Lindsay Walton',
+//     role: 'Front-end Developer',
+//     imageUrl:
+//       'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+//     twitterUrl: '#',
+//     linkedinUrl: '#',
+//   },
+//   {
+//     name: 'Lindsay Walton',
+//     role: 'Front-end Developer',
+//     imageUrl:
+//       'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+//     twitterUrl: '#',
+//     linkedinUrl: '#',
+//   },
+//   {
+//     name: 'Lindsay Walton',
+//     role: 'Front-end Developer',
+//     imageUrl:
+//       'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+//     twitterUrl: '#',
+//     linkedinUrl: '#',
+//   },
+//   {
+//     name: 'Lindsay Walton',
+//     role: 'Front-end Developer',
+//     imageUrl:
+//       'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+//     twitterUrl: '#',
+//     linkedinUrl: '#',
+//   },
+//   // More people...
+// ];
 
 export default function Example() {
   const { publicRuntimeConfig } = getConfig();
 
-  const { MEETUP_URL } = publicRuntimeConfig;
+  const { MEETUP_URL, DISCORD_INVITE_URL } = publicRuntimeConfig;
 
   return (
     <div>
@@ -76,7 +76,7 @@ export default function Example() {
             <main className="lg:mt-24">
               <div className="mx-auto max-w-7xl">
                 <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-                  <div className=" sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
+                  <div className="lg:-mt-16 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
                     <div>
                       <a
                         href="#"
@@ -89,7 +89,7 @@ export default function Example() {
                         <ChevronRightIcon className="ml-2 w-5 h-5 text-gray-500" aria-hidden="true" />
                       </a>
                       <h1 className="mb-8 sm:mb-0 text-center lg:text-left mt-4 text-3xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-5xl">
-                        <span className="md:block sm:text-3xl">virtualEDA - Online Community</span>{' '}
+                        <span className="md:block sm:text-3xl">VirtualEDA - Online Community</span>{' '}
                         <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">
                           Learn, Share and Meet
                         </span>
@@ -97,7 +97,7 @@ export default function Example() {
                       <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                         A community for people who want to learn more about Event-Driven Architectures.
                       </p>
-                      <div className="hidden sm:block">
+                      {/* <div className="hidden sm:block">
                         <p className="mt-8 text-sm text-white uppercase tracking-wide font-semibold sm:mt-10">Sponsors</p>
                         <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
                           <div className="flex flex-wrap items-start justify-between">
@@ -124,7 +124,7 @@ export default function Example() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div className="mt-6 sm:mt-14 lg:mt-0 lg:col-span-6 ">
@@ -132,7 +132,7 @@ export default function Example() {
                       <div className="bg-gray-800 text-white rounded-xl  p-4">
                         <h1 className="text-lg">Welcome,</h1>
                         <p className="text-gray-300 mt-2">
-                          virtualEDA is a site for people who want to get more in-depth knowledge of Event-Driven Architectures.
+                          VirtualEDA is a site for people who want to get more in-depth knowledge of Event-Driven Architectures.
                           The website is driven by the community and we welcome contributions and learning material.
                         </p>
                         <p className="text-gray-100 mt-4 fon">
@@ -156,6 +156,7 @@ export default function Example() {
                               Join Community Meetup
                             </a>
                           </div>
+
                         </div>
                       </div>
                     </div>
@@ -239,15 +240,14 @@ export default function Example() {
             <div className="text-lg max-w-prose mx-auto">
               <h1>
                 <span className="block text-base text-center text-pink-600 font-semibold tracking-wide uppercase">Welcome</span>
-                <span className="mt-2 hidden sm:block text-xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                <span className="mt-2 hidden sm:block text-xl text-center leading-8 font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500 sm:text-4xl">
                   Event Architectures for Everyone
                 </span>
               </h1>
-              <p className="hidden sm:block mt-8 text-xl text-gray-500 leading-8">VirutalEDA</p>
             </div>
             <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto pb-10">
               <p>
-                virtualEDA is an open community of people that want to learn, share and talk around Event Driven Architectures.
+                VirtualEDA is an open community of people that want to learn, share and talk around Event Driven Architectures.
                 Event Architectures are becoming more and more popular and we want to give everybody a place they can learn and
                 share their experiences with each other.
               </p>
@@ -257,18 +257,22 @@ export default function Example() {
                 understanding of Event Architectures.
               </p>
               <p>
-                All the learning material you find on this website is open source and driven by markdown files. We welcome
-                contributions you may wish to add to the website.
+                All the learning material you find on this website is open source and driven by markdown files. <a  href="https://github.com/boyney123/virtualEDA" target="_blank" rel="noreferrer">We welcome
+                contributions you may wish to add to the website.</a>
               </p>
               <h2>Remote Meetups</h2>
               <p>
-                We arrange remote meetup sessions where people can come talk and listen to each other&aposs experiences with Event
+                We arrange remote meetup sessions where people can come talk and listen to each other&apos;s experiences with Event
                 Architectures and encourage people to share ideas and learn. Sign up to our Meetup Group to make sure you get the
                 announcements and register to our sessions.
               </p>
+              <h2>Community</h2>
+              <p>
+                Our aim is to create a wecloming community for people that want to learn more about Event Architectures. Feel free to <a href={DISCORD_INVITE_URL} target="_blank" rel="noreferrer">join us on Discord</a> where you can learn, ask questions and join like minded people.
+              </p>
               <h2>The Future</h2>
               <p>
-                virtualEDA is a new idea, and we want to see if we can grow a community of people that are willing to learn and
+                VirtualEDA is a new idea, and we want to see if we can grow a community of people that are willing to learn and
                 share ideas with each other. If you would like to help, speak, contribute or sponsor please get in contact!
               </p>
               <p>We are looking forward to seeing what we can create, let’s make something awesome</p>
@@ -286,15 +290,16 @@ export default function Example() {
           <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
             <div className="md:ml-auto md:w-1/2 md:pl-10">
               <h2 className="text-base font-semibold uppercase tracking-wider text-gray-300">Learn together</h2>
-              <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">Community</p>
+              <p className="mt-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500 text-3xl font-extrabold tracking-tight sm:text-4xl">Community</p>
               <p className="mt-3 text-lg text-gray-300">
-                Join the virtualEDA Community to connect, learn and share your experince with event-driven architectures.
+                Join the VirtualEDA Community to connect, learn and share your experince with event-driven architectures.
               </p>
               <div className="mt-8">
                 <div className="inline-flex rounded-md shadow space-x-2">
                   <a
-                    href="#"
-                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+                    href={DISCORD_INVITE_URL}
+                    target="_blank"
+                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50" rel="noreferrer"
                   >
                     Join Discord
                     <ExternalLinkIcon className="-mr-1 ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
@@ -303,14 +308,41 @@ export default function Example() {
               </div>
             </div>
           </div>
+          
         </div>
+        <div className="bg-gray-50">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-28 lg:px-8 lg:flex lg:items-center lg:justify-between">
+        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <span className="block">Ready to dive in?</span>
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">Join the community today.</span>
+        </h2>
+        <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+          <div className="inline-flex rounded-md shadow">
+            <a
+              href={MEETUP_URL}
+              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700"
+            >
+              Join Meetup Group
+            </a>
+          </div>
+          <div className="ml-3 inline-flex rounded-md shadow">
+            <a
+              href={DISCORD_INVITE_URL}
+              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
+            >
+              Join Discord Community
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div className="bg-white">
+        {/* <div className="bg-white">
           <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
             <div className="space-y-12">
               <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
                 <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Organisers</h2>
-                <p className="text-xl text-gray-500">Volunteers that run help and run virtualEDA.</p>
+                <p className="text-xl text-gray-500">Volunteers that run help and run VirtualEDA.</p>
               </div>
               <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
                 {people.map((person) => (
@@ -354,7 +386,7 @@ export default function Example() {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

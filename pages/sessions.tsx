@@ -21,7 +21,12 @@ function Sessions() {
               Meetup Group.
             </a>
           </p>
-          <p>If you would like to speak please get in touch.</p>
+          <p>
+            If you would like to speak {' '}
+            <a className="underline text-gray-400" href={publicRuntimeConfig.SUBMIT_TALK} target="_blank" rel="noreferrer">
+              feel free to submit your talk.
+            </a>
+          </p>
         </div>
       </main>
     </div>
